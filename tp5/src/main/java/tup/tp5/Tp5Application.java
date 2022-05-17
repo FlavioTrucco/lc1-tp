@@ -12,10 +12,19 @@ public class Tp5Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Tp5Application.class, args);
 	}
+
 	@GetMapping("/")
 	public String hola() {
-	return String.format("¡Hola!");
+       
+		String respuesta = "";
+
+		String[] entradas = { "1", "2", "2", "4"};
+        respuesta += "Cantidad de entradas: " + entradas.length;
+		
+		for (int i = 0; i < entradas.length; i++) {
+        ;
+		}
+		return respuesta;
 	}
 
 }
-
